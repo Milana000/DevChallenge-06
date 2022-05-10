@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+    width: 85%;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #4E5150;
+}
+
+h2 {
+    font-weight: 600;
+    color: #333333;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li label,
+p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #4F4F4F;
+    padding: 12px 0;
+}
+
+ul li input,
+select {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    color: #828282;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+ul li span {
+    display: flex;
+    height: 55px;
+    border: 1px solid #828282;
+    border-radius: 15px;
+}
+
+ul li span i {
+    padding: 18px 15px;
+}
+
+
+#page {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 100px;
+}
+
+#page #main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page #main .inputs{
+    width: 52%;
+}
+
+#page #main .shipping li:last-child ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page #main .shipping li:last-child ul li {
+    width: 45%;
+}
+
+#page #main .shipping .submit{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#page #main .shipping .submit .checkbox{
+    display: flex;
+}
+
+#page #main .shipping .submit .checkbox input{
+    width: 15px;
+    height: 15px;
+}
+
+#page #main .shipping .submit button{
+    width: 150px;
+    line-height: 3;
+    align-self: flex-end;
+    background-color: #F2994A;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#page #main .sidebar{
+    width: 40%;
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+#page #main .sidebar .items{
+    margin-bottom: 90px;
+}
+
+#page #main .sidebar .items img{
+    width: 175px;
+    height: 135px;
+    border-radius: 15px;
+}
+
+#page #main .sidebar .items .item-01, .item-02{
+    display: flex;
+    padding: 35px 15px;
+    justify-content: space-evenly;
+}
+
+#page #main .sidebar .items .item-02{
+    padding: 10px 15px 0 0;
+}
+
+#page #main .sidebar .items .item-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#page #main .sidebar .items .item-info h3{
+    font-size: 16px;
+    margin: 0;
+}
+
+#page #main .sidebar .items .item-info .price{
+    display: flex;
+    margin-top: 15px;
+}
+
+#page #main .sidebar .items .item-info .price span:first-child{
+    font-weight: 600;
+    font-size: 16px;
+    color: #F2994A;
+}
+
+#page #main .sidebar .items .item-info .price span:last-child{
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #4E5150;
+    padding-left: 15px;
+}
+
+#page #main .sidebar .items .item-info .quantity{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 35px;
+    border: 1px solid #828282;
+    border-radius: 15px;
+    align-items: center;
+}
+
+#page #main .sidebar .items .item-info .quantity span{
+    height: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 8px;
+    background-color: #E0E0E0;
+    border-radius: 7px;
+}
+
+#page #main .sidebar .items .item-01 .item-info .quantity{
+    margin-left: 18px;
+}
+
+#page #main .sidebar .items .item-02 .item-info .quantity{
+    width: 91%;
+}
+
+#page #main .sidebar .postage, .total{
+    display: flex;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+
+#page #main .sidebar .payment{
+    margin-bottom: 20px;
+}
+
+#page #main .sidebar .postage, .total span{
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+}
+
+/* Footer start */
+
+#footer {
+    width: 100%;
+}
+
+#footer p {
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+/* Footer end */
+
+@media screen and (max-width:1150px) {
+    #page{
+        padding: 0 50px;
+    }
+    #page #main .sidebar .items .item-info h3{
+        font-size: 14px;
+    }
+
+    #page #main .sidebar .items .item-01{
+        padding: 35px 0;
+    }
+
+    #page #main .sidebar .items .item-01 .item-info .quantity{
+        margin-left: 0;
+    }
+
+    #page #main .sidebar .items .item-02 .item-info .quantity{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:950px){
+    #page #main .sidebar .items .item-01, .item-02{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #page #main .sidebar .items .item-02{
+        padding-left: 20px;
+    }
+
+    #page #main .sidebar .items .item-info .quantity{
+        align-self: center;
+    }
+
+    #page #main .sidebar .items .item-info{
+        margin-top: 20px;
+    }
+
+    #page #main .sidebar .items{
+        margin-bottom: 50px;
+    }
+
+
+    #page #main .shipping li:last-child ul{
+        flex-direction: column;
+    }
+
+    #page #main .shipping li:last-child ul li{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    #page{
+        padding: 0 20px;
+    }
+
+    #page #main{
+        flex-direction: column-reverse;
+    }
+
+    #page #main .inputs{
+        width: 100%;
+    }
+
+    ul li input,
+    select{
+        font-size: 12px;
+    }
+
+    #page #main .shipping li:last-child ul{
+        flex-direction: row;
+    }
+
+    #page #main .shipping li:last-child ul li span i{
+        padding: 18px 5px;
+    }
+
+    #page #main .shipping li:last-child ul li{
+        width: 45%;
+    }
+
+    #page #main .sidebar{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #page #main .sidebar .items .item-01, .item-02{
+       flex-direction: row;
+    }
+
+    #page #main .sidebar .items .item-info{
+        margin: 0;
+    }
+
+    #page #main .sidebar .items .item-02{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #page #main .shipping li:last-child ul li input,
+    select{
+        font-size: 11px;
+    }
+
+    #page #main .sidebar .items img{
+        width: 150px;
+        height: 130px;
+    }
+
+    #page #main .sidebar .items .item-02 {
+        padding: 10px 0 0;
+    }
+
+    #page #main .sidebar .items .item-info h3{
+        font-size: 12px;
+    }
+
+    #page{
+        padding: 0 10px;
+    }
+
+    #page #main .sidebar .items .item-02 .item-info .quantity{
+        width: 70%;
+    }
+}

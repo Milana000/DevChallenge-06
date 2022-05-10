@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout Page</title>
+</head>
+
+<body>
+
+    <div id="page">
+        <div id="header">
+            <h1>Checkout</h1>
+        </div>
+
+        <div id="main">
+            <div class="inputs">
+                <form action="#">
+                    <h2>Contact infomation</h2>
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <label for="email">Email</label>
+                                <span>
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" id="email" required placeholder="Enter your email...">
+                                </span>
+                            </li>
+                            <li>
+                                <label for="phone">Phone</label>
+                                <span>
+                                    <i class="fas fa-phone"></i>
+                                    <input type="text" name="phone" id="phone" required placeholder="Enter your phone...">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2>Shipping address</h2>
+
+                    <div class="shipping">
+                        <ul>
+                            <li>
+                                <label for="name">Full name</label>
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="name" id="name" placeholder="Rodney Cotton" required>
+                                </span>
+                            </li>
+                            <li>
+                                <label for="address">Address</label>
+                                <span>
+                                    <i class="fas fa-home"></i>
+                                    <input type="text" name="address" id="address" required placeholder="Your address...">
+                                </span>
+                            </li>
+                            <li>
+                                <label for="city">City</label>
+                                <span>
+                                    <i class="fas fa-city"></i>
+                                    <input type="text" name="city" id="city" placeholder="Your city...">
+                                </span>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p>Country</p>
+                                        <span>
+                                            <i class="fas fa-globe"></i>
+                                            <select id="country" name="country">
+                                                <option>Your country..</option>
+                                                <option value="BiH">BiH</option>
+                                                <option value="SRB">Serbia</option>
+                                                <option value="MNE">Montenegro</option>
+                                            </select>
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <label for="postal">Postal code</label>
+                                        <span>
+                                            <i class="fas fa-address-card"></i>
+                                            <input type="text" name="postal" id="postal"
+                                                placeholder="Your postal code...">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="submit">
+                            <div class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <label for="checkbox">Save this information for next time</label>
+                            </div>
+                            <button type="submit">Continue</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sidebar">
+                <div class="items">
+
+                    <div class="item-01">
+                        <img src="img/photo1.png" alt="Backpack">
+                        <div class="item-info">
+                            <h3>Vintage Backpack</h3>
+                            <div class="price">
+                                <span>$54.99</span>
+                                <span>$94.99</span>
+                            </div>
+
+                            <div class="quantity">
+                                <span>-</span>
+                                <p>1</p>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-02">
+                        <img src="img/photo2.png" alt="Shoes">
+                        <div class="item-info">
+                            <h3>Levi Shoes</h3>
+                            <div class="price">
+                                <span>$74.99</span>
+                                <span>$124.99</span>
+                            </div>
+
+                            <div class="quantity">
+                                <span>-</span>
+                                <p>1</p>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="payment">
+                    <div class="postage">
+                        <span>Shipping</span>
+                        <span>$19</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="total">
+                        <span>Total</span>
+                        <span>$148.98</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>created by Milana000 - devChallenges.io</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
